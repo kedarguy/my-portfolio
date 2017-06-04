@@ -1,0 +1,23 @@
+header {
+    background-image: url("../assets/images/snowboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    background-position: center;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+h2 {
+    margin:0;
+    color: #ffffff;
+    font-family: var(--header-font);
+    font-size: 90px;
+    font-weight: 400;
+    text-transform: uppercase; 
+}
