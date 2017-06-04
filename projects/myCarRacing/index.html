@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <title>Car Racing</title>
     <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body onload="initGame()" onkeyup="keyPressed()">
+    <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+    </nav>
+
     <header>
         <h1>Cars Racing</h1>
+        <h3>1 and 2 keys for top player, up and down arrows for bottom player, press keys fast!!</h3>
     </header>
     <main>
         <!--<button onclick="showPopup()">Show Popup</button>-->
         <button class="btn-start" onclick="startRace()">Start Race!</button>
-        
+
         <div class="road">
             <div class="car car1"></div>
             <hr />
@@ -28,12 +36,13 @@
 
     </main>
     <footer>
-        coffeerights &copy;  2017
+        coffeerights &copy; 2017
     </footer>
 
-<script src="js/utils.js"></script>
-<script src="js/main.js"></script>
-<!--<script src="js/test.js"></script>-->
-   
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <!--<script src="js/test.js"></script>-->
+
 </body>
+
 </html>
