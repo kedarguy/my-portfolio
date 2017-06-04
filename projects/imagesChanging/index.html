@@ -1,0 +1,50 @@
+<!--Images Changing
+Your challenge is to show 3 images on the page.
+1. When an image is clicked, mark it as selected by adding a class that adds a border
+2. Clean previously 'selected' image (you may use a global variable to hold the selected element)
+3. Add a button 'Change Images', when clicked, change all 3 images
+a. Use an array of strings: the image urls.
+b. You may write a function getRandomImage to return one of the images urls from the array
+4. Add a button 'Change Images in 5 seconds', when clicked, change all 3 images after 5 seconds
+5. Add a button 'Change Images every 5 seconds', when clicked, change all 3 images every 5 seconds
+a. when clicked, change the text of the button to 'Stop!', when clicked – stop and set the button text back.
+6. Change the images array to contain objects, every object should have the url for that image and a description text
+7. When an image is clicked, show its description-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1>Guys Images Changing</h1>
+    <button onclick="changeImages()">Change Images</button>
+    <button onclick="changeImagesInFiveSec()">Change Images in five sec</button>
+    <button class="everyBtn" onclick="changeImagesEveryFiveSec()">Change Images every five sec</button>
+
+    <div class="images">
+        <div class="imgDiv">
+            <img class="firstImg" src="images/ski.jpg" alt="first image" onclick="clickImg(this)">
+            <div class="desc"></div>
+        </div>
+        <div class="imgDiv">
+            <img class="secondImg" src="images/castle.jpg" alt="second image" onclick="clickImg(this)">
+            <div class="desc"></div>
+        </div>
+        <div class="imgDiv">
+            <img class="thirdImg" src="images/fjords.jpg" alt="third image" onclick="clickImg(this)">
+            <div class="desc"></div>
+        </div>
+
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

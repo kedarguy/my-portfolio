@@ -1,0 +1,16 @@
+$container-width: 100%;
+$mobile-breakpoint: 642px;
+
+:root {
+  /* Layout */
+  --container-width: $container-width;
+  --inner-container-width: 978px;
+  /* Fonts */
+  --primary-font: lato;
+  --logo-font: euro;
+  /* Colors */
+  --main-color: #626262;
+  --sections-bg: #f0f0f0;
+}
+
+

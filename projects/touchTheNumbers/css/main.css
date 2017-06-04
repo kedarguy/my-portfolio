@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: gold;
+    font-family: sans-serif;
+}
+
+.container {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #262701;
+    border: 3px solid orange;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.board {
+    border: 3px dotted white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowInBoard {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-self: stretch;
+}
+.cell {
+    background-color: gold;
+    color: black;
+    width:75px;
+    height: 75px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+
+.flipped {
+    background-color: #3f3f3f;
+    opacity: 0.3;
+    transform: rotateZ( 360deg );
+}
+
+.timer-and-next-num {    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.new-game {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.large > img {
+    max-width: 400px;
+    max-height: 400px;
+}
+.medium > img {
+    max-width: 322px;
+    max-height: 322px;
+}
+.small > img {
+    max-width: 243px;
+    max-height: 243px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+}

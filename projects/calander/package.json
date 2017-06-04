@@ -1,0 +1,17 @@
+{
+  "name": "calander",
+  "version": "1.0.0",
+  "description": "Guy Kedar Calander App",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel serve styles",
+    "serve": "live-server",
+    "styles": "node-sass -w css/main.scss css/main.css"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "npm-run-all": "^4.0.2"
+  },
+  "author": "Guy Kedar",
+  "license": "ISC"
+}

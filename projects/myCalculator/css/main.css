@@ -1,0 +1,66 @@
+body {
+    background-color: 635D5C;
+    padding: auto;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+
+.panel {
+    height: 15%;
+    width: 90%;
+    background-color: #EFFCE0;
+    border: solid 1px black;
+    margin: 4px auto;
+    padding: 4px;
+}
+
+.calculatorBody {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    background-color: #D4DFC7;
+    border: solid 2px black;
+}
+
+.buttons {
+    height: 70%;
+    width: 90%;
+    padding: 2px;
+    text-align: center;
+
+}
+
+.digit {
+    width: 50px;
+    height: 50px;
+ 
+}
+
+.operator {
+    width: 50px;
+    height: 50px;
+}
+.result {
+    width: 50px;
+    height: 105px;
+    position: absolute;
+    top: 315px;
+    right: 204px;
+}
+
+.restart {
+    width: 50px;
+    height: 50px;
+}
+
+.zero {
+    width: 100px;
+    float: left;
+}
+
+.lastRows {
+    float: left;
+    margin: 2px;
+}

@@ -1,0 +1,87 @@
+body {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.panel {
+    padding: 10px;
+}
+button {
+    display: inline-block;
+    margin: 5px auto;
+    font-size: 17px;
+    border-radius: 18px;
+    border-width: 1px;
+    box-shadow: 4px 3px;
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 50px;
+
+}
+
+.panel .count {
+    display: inline-block;
+    margin: 5px auto;
+    display: inline-block;
+    margin: 5px auto;
+    font-size: 17px;
+    border-radius: 18px;
+    border-width: 1px;
+    box-shadow: 4px 3px;
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 50px;
+
+}
+
+table
+{
+    margin: auto;
+    table-layout: fixed;
+    
+}
+
+td {
+    height: 40px;
+    width: 40px;
+    text-align: center
+}
+
+td img {
+    max-width: 30px;
+}
+
+.wall {
+    background-image: url('../images/wall.gif');
+    background-size: 100%;
+}
+
+.floor {
+     background-image: url('../images/floor.jpg');
+    background-size: 100%;
+}
+
+.target {
+     background-image: url('../images/target.gif');
+    background-size: 100%;
+}
+
+.glue {
+    background-image: url('../images/glue.jpg');
+    background-size: 100%;
+}
+.water {
+    background-image: url('../images/water.jpg');
+    background-size: 100%;
+}
+.links {
+    text-align: right;
+    margin: 5px 50px;
+    padding: 5px;
+}
+.links a {
+    margin: 5px 20px;
+    padding: 5px;
+}

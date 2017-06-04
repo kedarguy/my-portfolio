@@ -1,0 +1,33 @@
+body {
+    background-color: lightgrey;
+}
+
+.images {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    background-color: darkgray;
+    text-align: center;
+}
+img {
+    max-width: 200px;
+    margin: 10px 30px;
+}
+
+.clickedImg {
+    border: solid black 2px;
+}
+.imgDiv {
+    display: inline-block;
+}
+
+
+/*.firstDescription {
+    display: none;
+}
+.secondDescription {
+    display: none;
+}
+.secondDescription {
+    display: none;
+}*/

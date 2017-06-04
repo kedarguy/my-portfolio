@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="styleSheet" href="css/admin.css">
+    <script>
+        var currUser = JSON.parse(localStorage.getItem("userIsAdmin"));
+        if (!currUser) window.location.href = "index.html";
+    </script>
+</head>
+
+<body onload="initAdmin()">
+
+    <a href="index.html">home</a>
+    <div class="top">
+        <h1>Admin Page</h1>
+        <button type="" onclick="toggleTableDisp()">Toggle Display</button>
+
+    </div>
+    <div class="main">
+
+    </div>
+
+
+
+    <script src="js/admin.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

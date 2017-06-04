@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="styleSheet" type="" href="css/main.css">
+</head>
+
+<body onload="initGame()" >
+    <div class="links">
+            <a href="../homepage/index.html">home</a>
+            <a href="../minesweeper/index.html">minesweeper</a>
+            <a href="../sokoban/index.html">sokoban</a>
+        </div>
+    <h1>Guys Mine Sweeper</h1>
+    <button type="" onclick="restartGame()">reset game</button>
+    <div class="timer">00</div>
+    <table border="2" cellpadding="2px" oncontextmenu="return false;">
+
+        <tbody class="board"></tbody>
+        
+    </table>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

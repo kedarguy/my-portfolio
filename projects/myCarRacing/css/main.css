@@ -1,0 +1,65 @@
+header {
+    background-color: lightcoral;
+    padding: 10px;
+    
+}
+
+footer {
+    margin-top: 250px;
+    background-color: darkred;
+    color:lightgray;
+    padding: 4px;
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+}
+
+.road {
+    background-color: black;
+    padding: 40px 0px;
+}
+
+.road > hr {
+  border: 0 none;
+  border-top: 10px dashed white;
+  background: none;
+  height:0;
+  margin: 30px 0px;
+}
+
+
+.car {
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    transition: margin-left 0.8s;
+}
+
+.game-on .car {
+    cursor: pointer;
+}
+
+
+.car1 {
+    background-color: blueviolet;
+}
+.car2 {
+    background-color: crimson;
+}
+
+.popup {
+
+    background-color: lightgray;
+    padding: 10px;
+    text-align:center;
+    visibility: hidden;
+    position:absolute;
+    top:100px;
+    left: 40%;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+
+}

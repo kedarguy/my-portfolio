@@ -1,0 +1,52 @@
+table
+{
+    margin: auto;
+    table-layout: fixed;
+    
+}
+
+td {
+    height: 20px;
+    width: 20px;
+}
+body {
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+.mine {
+    color: red;
+}
+
+.notClicked {
+    background-color: grey;
+    color: grey;
+}
+.notClicked  img{
+    display: none;
+}
+img {
+    display:block; 
+    width:100%; 
+    height:auto;
+    margin: auto;
+
+
+}
+
+.marked  {
+    background-image: url('../img/marked.png');
+    background-size: 20px 20px;
+    
+}
+
+.links {
+    text-align: right;
+    margin: 5px 50px;
+    padding: 5px;
+}
+.links a {
+    margin: 5px 20px;
+    padding: 5px;
+}

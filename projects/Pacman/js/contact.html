@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+
+  <header>
+    <h1>Games are Fun</h1>
+  </header>
+
+
+<h2>Contact Us</h2>
+
+<form action="">
+
+  <div class="formLine">
+    <label for="username">Name:</label> 
+    <input value="Puki D" type="text" placeholder="your Name here" id="username" name="username" required maxlength="10" />
+  </div>
+
+  <div class="formLine">
+    <input type="checkbox" id="agree" name="agree" value="yes">
+    <label for="agree"> Agree?</label>
+  </div>  
+
+  <div class="formLine">
+    <input type="radio" name="gender" id="genderMale" value="male"> 
+    <label for="genderMale">Male</label>
+    
+    <input type="radio" name="gender" id="genderFemale"  value="female">
+    <label for="genderFemale">Female</label>
+      
+    <input type="radio" name="gender" id="genderOther"  value="other">
+    <label for="genderOther">Other</label>
+  </div>  
+
+
+  <div class="formLine">
+    <label for="country">Country:</label> 
+    <select name="country" id="country">
+      
+      <option value="">Pick a Country</option>
+      <option value="il">Israel</option>
+      <option value="jp">Japan</option>
+      <option value="uk">Britain</option>
+      
+    </select>
+
+  </div>
+  
+  <div class="formLine">
+    <label for="birthdate">Your Birthdate</label> 
+    <input type="date" placeholder="yyyy-mm-dd" name="birthdate" id="birthdate" />
+  </div>  
+    
+   <div class="formLine">
+    <label for="tel">Your Phone</label> 
+    <input type="tel" placeholder="xxx-xxxxxx" name="tel" id="tel" />
+  </div>  
+  
+  <div class="formLine">
+    <label for="url">Your Website</label> 
+    <input type="url" placeholder="http://" name="url" id="url" />
+  </div>  
+  <div class="formLine">
+    <label for="email">Your Email</label> 
+    <input type="email" name="email" id="email"  />
+  </div>  
+  <div class="formLine">
+    <label for="pass">Your Password</label> 
+    <input type="password" name="pass" id="pass"  />
+  </div>  
+       
+    
+    
+  <div class="formLine">
+    <label for="desc">Few words about me:</label> 
+    <textarea name="desc" id="desc" cols="30" rows="10" placeholder="about you..."></textarea>
+
+  </div>  
+  
+  
+  
+  
+  <div class="formLine">
+    <button onclick="saveContact();return false;" type1="submit">Send!</button>
+  </div>  
+    
+    
+    
+    
+ </form> 
+
+
+
+
+<!--<input type="submit"/>-->
+
+<hr/>
+<a href="index.html">Back Home</a>
+
+
+<script>
+  
+ 
+
+  function saveContact() {
+    
+    var elUserName = document.querySelector('#username');
+    var elTel = document.querySelector('#tel');
+    
+    
+    var contact = {
+      username: elUserName.value,
+      phone: elTel.value
+    };
+    
+    
+    saveToStorage('userContact', contact);
+  }
+  
+  
+</script>
+
+<script src="js/general.js"></script>
+
+
+
+</body>
+</html>

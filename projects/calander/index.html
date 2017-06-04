@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="styleSheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <div class="container" onclick="hideNav()">
+        <header>
+            <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+            <h1>Guy's Calender</h1>
+            <div class="insible-div-header"></div>
+        </header>
+      
+        <main >
+            <nav>
+                <ul>
+                    <li class="funcs add-meeting" onclick="openMeetingForm(this);">Add Meeting</li>
+                    <li class="funcs" onclick="renderSortMeeting();">Sort Meetings</li>
+                    <li class="funcs" onclick="renderFindNextMeeting();">Show Next Meeting</li>
+                    <li class="funcs" onclick="renderGetMeetingsCountFor();">Show number of Meetings for:</li>
+                </ul>
+            </nav>
+            <div class="calender-container"></div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

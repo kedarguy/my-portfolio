@@ -1,0 +1,29 @@
+<!--Pop those Balloons
+Your challenge is to show some balloons and make them go up slowly to the top of the page.
+1. Create 2 divs that looks like balloons
+a. Create a class .balloon with: width, height, border-radius, and position: absolute
+b. Create classes balloon1, balloon2 with: background color, left (so they don’t be on top of each other)
+2. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame(); startGame()">
+    <h1>Guys Pop Those Balloons</h1>
+    <hr>
+
+    <div class="balloon balloon1" onclick="clickedBalloon(0)">b0</div>
+    <div class="balloon balloon2" onclick="clickedBalloon(1)">b1</div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

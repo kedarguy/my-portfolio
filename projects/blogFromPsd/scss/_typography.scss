@@ -1,0 +1,20 @@
+
+/*----------  Lato Font  ----------*/
+
+@font-face {
+  font-family: 'lato';
+  src: url('../assets/fonts/Lato/Lato-Regular.ttf'); 
+}
+
+
+/*----------  Euro Font  ----------*/
+
+@font-face {
+  font-family: 'euro';
+  src: url('../assets/fonts/eurof55.ttf');
+  font-weight: 400;
+}
+
+.header {
+  font-size: rem(30px);
+}

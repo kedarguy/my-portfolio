@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guys Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <h1>Guy's Calculator</h1>
+    <div class="calculatorBody">
+        <div class="panel"></div>
+
+        <div class = "buttons">
+        <button type="" class="restart" onclick="calcDeleteLastChar()"> &lt;- </button>
+        <button type="" class="restart" onclick="calcResetPanel()">ce</button>
+        <button type="" class="restart" onclick="calcRestart()">c</button>
+        <button type="" class="operator" onclick="setOperator('+/-')">+/-</button>
+        <button type="" class="operator" onclick="setOperator('sqrt')">Sqroot</button>
+        <button type="" class="digit" onclick="addDigit(7)">7</button>
+        <button type="" class="digit" onclick="addDigit(8)">8</button>
+        <button type="" class="digit" onclick="addDigit(9)">9</button>
+        <button type="" class="operator" onclick="setOperator('/')">/</button>
+        <button type="" class="operator" onclick="setOperator('%')">%</button>
+        <button type="" class="digit" onclick="addDigit(4)">4</button>
+        <button type="" class="digit" onclick="addDigit(5)">5</button>
+        <button type="" class="digit" onclick="addDigit(6)">6</button>
+        <button type="" class="operator" onclick="setOperator('*')">*</button>
+        <button type="" class="operator" onclick="setOperator('1/x')">1/x</button>
+        <button type="" class="digit lastRows" onclick="addDigit(1)">1</button>
+        <button type="" class="digit lastRows" onclick="addDigit(2)">2</button>
+        <button type="" class="digit lastRows" onclick="addDigit(3)">3</button>
+        <button type="" class="operator lastRows" onclick="setOperator('-')">-</button>
+        <button type="" class="result" onclick="finalCalcResult()">=</button>
+        <button type="" class="digit zero" onclick="addDigit(0)">0</button>
+        <button type="" class="digit lastRows" onclick="addDigit('.')">.</button>
+        <button type="" class="operator lastRows" onclick="setOperator('+')">+</button>
+        </div>
+    <div class="dataTest">
+        <div class="gCurrNumDisp"></div>
+        <div class="gAccumeltorDisp"></div>
+        <div class="gOpperatorDisp"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

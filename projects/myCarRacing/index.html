@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Car Racing</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body onload="initGame()" onkeyup="keyPressed()">
+    <header>
+        <h1>Cars Racing</h1>
+    </header>
+    <main>
+        <!--<button onclick="showPopup()">Show Popup</button>-->
+        <button class="btn-start" onclick="startRace()">Start Race!</button>
+        
+        <div class="road">
+            <div class="car car1"></div>
+            <hr />
+            <div class="car car2"></div>
+        </div>
+
+        <div class="popup">
+            <h1>Vicorious!</h1>
+            <h3></h3>
+            <h4>Took you <span></span> secs</h4>
+            <button onclick="hideVictoryPopup()">Close</button>
+        </div>
+
+    </main>
+    <footer>
+        coffeerights &copy;  2017
+    </footer>
+
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<!--<script src="js/test.js"></script>-->
+   
+</body>
+</html>

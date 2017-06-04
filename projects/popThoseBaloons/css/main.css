@@ -1,0 +1,31 @@
+/*Create a class .balloon with: width, height, border-radius, and position: absolute
+b. Create classes balloon1, balloon2 with: background color, left (so they don’t be on top of each other)*/
+
+
+body {
+    background-color: gray;
+}
+
+.balloon {
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.balloon1 {
+    background-color: blue;
+    left: 100px;
+    bottom: 3px;
+    opacity: 1;
+ 
+
+}
+.balloon2 {
+    background-color: red;
+    left: 250px;
+    bottom: 3px;
+    opacity: 1;
+ 
+}
