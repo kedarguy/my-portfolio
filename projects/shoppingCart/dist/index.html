@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="bundle.css">
+    <title>Coding Academy Cart</title>
+  </head>
+  <body>
+    <section class="container">
+      <section>
+        <p class="title">Coding Academy Cart</p>
+      </section>
+
+      <div class="loader"></div>
+      <section class="admin-area" >
+          <button data-add-product-btn>Add Product</button>
+          <button data-remove-product-btn>Remove Product</button>
+      </section>
+      <section class="flex products-cart">
+        
+        <section class="products flex-2 flex justify-space"></section>
+
+        <section class="cart flex-1">
+          <p class="title is-3" style="text-align: left;">Your Cart</p>
+          <p class="margin" data-cart-status>Your shopping cart is empty</p>
+          <section class="cart-items"></section>
+          <p class="title is-3">Total of: <span data-cart-total class="title is-3">0</span>$</p>
+          <button class="button is-success is-medium" data-checkout-btn>Checkout</button>
+        </section>
+
+      </section>
+
+      <section class="admin-log-in">
+        <button log-in >Admin Log-In</button>
+      </section>
+    </section>
+    <script src="bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video with volume</title>
+</head>
+
+<body>
+    <video id="myVideo" width="600" height="400" controls autoplay loop onclick="toggleVideo();">
+        <source src="video/big_buck_bunny.mp4" />
+        <source src="video/big_buck_bunny.ogv" />
+        <source src="video/big_buck_bunny.webm" />
+        <object type="application/x-shockwave-flash" width="600" height="400">
+            <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=1084537" />
+        </object>
+
+    </video>
+    <button onclick="volumeUp()">+</button>
+    <button onclick="volumeDown()">-</button>
+</body>
+
+<script src="js/main.js">
+</script>
+</html>

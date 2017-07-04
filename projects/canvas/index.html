@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas practice</title>
+</head>
+<script>
+    var canvas;
+    var context;
+    var elColorPicker;
+    var elShapePicker;
+    function init() {
+        console.log('inited');
+        elColorPicker = document.querySelector('#colorPicker');
+        elShapePicker = document.querySelector('#shapePicker');
+        canvas = document.querySelector('#myCanvas');
+        context = canvas.getContext('2d');
+    }
+
+
+    function drawChosenShapeAndColor() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        var color = elColorPicker.value;
+        if (elShapePicker.value === 'rectangle') drawRect(color);
+        else if (elShapePicker.value === 'circle') drawCircile(color);
+    }
+
+    function drawRect(color) {
+        var canvas = document.querySelector('#myCanvas');
+        var context = canvas.getContext('2d');
+        context.fillStyle = color;
+        context.fillRect(25, 25, 150, 100);
+    }
+
+    function drawCircile(color) {
+        var canvas = document.querySelector('#myCanvas');
+        var context = canvas.getContext('2d');
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        var radius = 70;
+        context.beginPath();
+        context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        context.fillStyle = color;
+        context.fill();
+        context.lineWidth = 5;
+        context.strokeStyle = '#003300';
+        context.stroke();
+    }
+
+</script>
+
+<body onload="init()">
+    <canvas id="myCanvas" width="500" height="400" onclick="drawChosenShapeAndColor()">
+    </canvas>
+    <input id="colorPicker" type="color" placeholder="PickColor" value="#FFFFFF">
+    <select id="shapePicker">
+        <option value="rectangle" >Rectangle</option>
+        <option value="circle">Circle</option>
+    </select>
+</body>
+
+</html>
