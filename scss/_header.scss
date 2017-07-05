@@ -21,3 +21,9 @@ h2 {
     font-weight: 400;
     text-transform: uppercase; 
 }
+
+   @media screen and (max-width: 820px) {
+       h2 {
+           font-size: 60px;
+       }
+    }
